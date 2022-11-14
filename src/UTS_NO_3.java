@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class UTS_NO_3 { public static void main(String[] args) {
+public class UTS_NO_3 { 
+    public static void main(String[] args) {
     int a=0;
     int s=0;
     int u=0;
@@ -45,15 +46,19 @@ public class UTS_NO_3 { public static void main(String[] args) {
         System.out.println("APAKAH ANDA INGIN MENGABSEN LAGI Y/T");
         bundir=mau.nextLine();
     }
-    System.out.println("JUMLAH KARYAWAN YANG SUDAH HADIR "+(a+u+s)+" ORANG" );
+    System.out.println("JUMLAH KARYAWAN YANG SUDAH HADIR "+(a+u+s+r)+" ORANG" );
     System.out.println("DAFTAR KARYAWAN YANG SUDAH ABSEN UNTUK BUS KELAS ATAS");
     nggak(top);
+        System.out.println("TOTAL KARYAWAN"+a+" ORANG");
     System.out.println("DAFTAR KARYAWAN YANG SUDAH ABSEN UNTUK BUS KELAS MENENGAH");
     ada(mid);
+        System.out.println("TOTAL KARYAWAN"+s+" ORANG");
     System.out.println("DAFTAR KARYAWAN YANG SUDAH ABSEN UNTUK BUS KELAS MENENGAH");
     yang(low);
+        System.out.println("TOTAL KARYAWAN"+u+" ORANG");
     System.out.println("DAFTAR KARYAWAN YANG SUDAH ABSEN UNTUK BUS KELAS BAWAH");
     peduli(bot);
+        System.out.println("TOTAL KARYAWAN"+r+" ORANG");
 }static void nggak(String[]top){
     for (int q=0;q< top.length;q++){
         System.out.println(top[q]);
